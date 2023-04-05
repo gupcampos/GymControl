@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+  <html>
+    <head>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/styles-cadastroFuncionario.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <title>Cadastro Cliente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+  
+    <body>
+        
+        
+        <div class="container">
+            <div class="header">
+                <h2>Criar uma conta<span class="badge badge-secondary"></span></h2>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="username">Nome de usuário</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        placeholder="Digite seu nome de usuário"
+                        />
+                    
+                    <small>Mensagem de erro</small>
+                </div>
+                <div>
+                    <div class="form-control">
+                    <div>
+                        <label for = "sexo">Sexo</label>
+                    </div>
+                    <select id=sexo> 
+                        <option>selecione seu sexo</option>
+                        <option>masculino</option>
+                        <option>feminino</option>
+                        <option>prefiro não declarar</option>
+                    </select>
+                </div>
+
+
+                    <div class="form-control">
+                    <label for="date">Data de Nascimento</label>
+                    
+                    <input type="date" 
+                           id="date" 
+                           /> 
+                    <small>Mensagem de erro</small>
+                </div>
+
+                
+                
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    
+                    <input type="text" 
+                           id="email" 
+                           placeholder="Digite seu email" 
+                           /> 
+                    <small>Mensagem de erro</small>
+                </div>
+
+                
+                
+                
+                <div class="form-control">
+                    <label for="password">Senha</label>
+                    <input 
+                        type="password" 
+                        id="password"
+                        placeholder="Digite sua senha" 
+                        /> 
+                    <small>Mensagem de erro</small>
+                </div>
+                <div class="form-control">
+                    <label for="password-confimation">Confirmação de senha</label>
+                    <input 
+                        type="password" 
+                        id="password-confirmation" 
+                        placeholder="Repita sua senha"/>
+                    
+                    <small>Mensagem de erro</small>
+                </div>
+                    <button type="submit">Register</button>
+            </form>
+
+        </div>
+    </body>
+   
+  </html>
