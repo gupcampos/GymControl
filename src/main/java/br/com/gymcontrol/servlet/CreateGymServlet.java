@@ -17,25 +17,29 @@ public class CreateGymServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String GymName = request.getParameter("name");
+        String name = request.getParameter("name");
         GymUser user = new GymUser();
-        user.setName(GymName);
-        new GymUserDao().GymUser(user);
-        System.out.println(GymName);
+        user.setName(name);
+        System.out.println(name);
 
         String Sexo = request.getParameter("sexo");
+        user.setSexo(Sexo);
         System.out.println(Sexo);
 
         String DateBirth = request.getParameter("DateBirth");
+        user.setDateBirth(DateBirth);
         System.out.println(DateBirth);
 
         String Email = request.getParameter("email");
+        user.setEmail(Email);
         System.out.println(Email);
 
         String Senha = request.getParameter("senha");
+        user.setSenha(Senha);
         System.out.println(Senha);
 
-        request.getRequestDispatcher("cadastro.html").forward(request, response);
+        new GymUserDao().GymUser(user);
+        request.getRequestDispatcher("index.html").forward(request, response);
 
     }
 

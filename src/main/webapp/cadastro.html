@@ -14,8 +14,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    
-  
     <body>
         
         
@@ -26,7 +24,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <form action="senac" method="post" id="form" class="form">
                 <div class="form-control">
                     <label for="name">Nome de usuário</label>
-                    <input 
+                    <input
+                        name="name"
                         type="text" 
                         id="name"
                         placeholder="Digite seu nome de usuário"
@@ -39,7 +38,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <div>
                         <label for = "sexo">Sexo</label>
                     </div>
-                    <select id=sexo> 
+                    <select
+                            name="sexo"
+                            id=sexo
+                            required="required">
                         <option>selecione seu sexo</option>
                         <option>masculino</option>
                         <option>feminino</option>
@@ -49,10 +51,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 
                     <div class="form-control">
-                    <label for="DATEBIRTH">Data de Nascimento</label>
+                    <label for="DateBirth">Data de Nascimento</label>
                     
-                    <input type="date" 
-                           id="DATEBIRTH"
+                    <input  name="DateBirth"
+                            type="date"
+                           id="DateBirth"
                            /> 
                     <small>Mensagem de erro</small>
                 </div>
@@ -62,8 +65,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <div class="form-control">
                     <label for="email">Email</label>
                     
-                    <input type="text" 
-                           id="email" 
+                    <input
+                           name="email"
+                           type="text"
+                           id="Email"
                            placeholder="Digite seu email" 
                            /> 
                     <small>Mensagem de erro</small>
@@ -73,8 +78,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 
                 
                 <div class="form-control">
-                    <label for="senha">Senha</label>
-                    <input 
+                    <label for="Senha">Senha</label>
+                    <input
+                        name="senha"
                         type="password" 
                         id="senha"
                         placeholder="Digite sua senha" 
