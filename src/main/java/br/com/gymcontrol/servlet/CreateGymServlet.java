@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
 
-@WebServlet("/create-user")
+@WebServlet("/senac")
 public class CreateGymServlet extends HttpServlet {
 
     @Override
@@ -19,6 +19,8 @@ public class CreateGymServlet extends HttpServlet {
 
         String GymName = request.getParameter("name");
         GymUser user = new GymUser();
+        user.setName(GymName);
+        new GymUserDao().GymUser(user);
         System.out.println(GymName);
 
         String Sexo = request.getParameter("sexo");
