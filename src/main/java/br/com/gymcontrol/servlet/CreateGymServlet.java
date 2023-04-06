@@ -1,5 +1,8 @@
 package br.com.gymcontrol.servlet;
 
+import br.com.gymcontrol.dao.GymUserDao;
+import br.com.gymcontrol.model.GymUser;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -8,14 +11,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
 
-@WebServlet("/create-gym")
+@WebServlet("/create-user")
 public class CreateGymServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String GymName = request.getParameter("username");
-
+        String GymName = request.getParameter("name");
+        GymUser user = new GymUser();
         System.out.println(GymName);
 
         String Sexo = request.getParameter("sexo");

@@ -23,12 +23,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <div class="header">
                 <h2>Criar uma conta<span class="badge badge-secondary"></span></h2>
             </div>
-            <form id="form" class="form">
+            <form  method="post" id="form" class="form">
                 <div class="form-control">
-                    <label for="username">Nome de usuário</label>
+                    <label for="name">Nome de usuário</label>
                     <input 
                         type="text" 
-                        id="username" 
+                        id="name"
                         placeholder="Digite seu nome de usuário"
                         />
                     
@@ -81,17 +81,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         /> 
                     <small>Mensagem de erro</small>
                 </div>
-                <div class="form-control">
-                    <label for="password-confimation">Confirmação de senha</label>
-                    <input 
-                        type="password" 
-                        id="password-confirmation" 
-                        placeholder="Repita sua senha"/>
-                    
-                    <small>Mensagem de erro</small>
-                </div>
+
                     <button type="submit">Register</button>
-            </form>
+                </div></form>
 
         </div>
     </body>

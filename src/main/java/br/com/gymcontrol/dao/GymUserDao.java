@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
 public class GymUserDao {
-    public void createCar(GymUser gymUser){
+    public void GymUser(GymUser gymUser){
 
         String SQL = "INSERT INTO GYMUSER (NAME, SEXO, DATEBIRTH, EMAIL, SENHA) VALUES (?, ?, ?, ?, ?)";
         try{
